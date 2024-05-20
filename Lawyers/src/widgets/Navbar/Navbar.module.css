@@ -1,0 +1,111 @@
+.navbar {
+    height: 88px;
+    display: flex;
+    gap: 43px;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(8px);
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.navbar h1 {
+    color: rgb(255, 255, 255);
+    font-family: 'Montserrat';
+    font-size: 22px;
+    font-weight: 800;
+}
+
+.itemList {
+    display: flex;
+    gap: 54px;
+}
+
+.navbar ul li a {
+    color: rgb(255, 255, 255);
+    font-family: 'Merriweather';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 13px;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.signUp {
+    font-family: 'Merriweather';
+    backdrop-filter: blur(8px);
+    background: rgba(0, 0, 0, 0.4);
+    border: 2px solid white;
+    color: white;
+    padding: 10px;
+    height: 50px;
+
+    &:hover {
+        background-color: white;
+        color: black;
+        border: 2px solid black;
+    }
+}
+
+.menu {
+    display: none;
+}
+
+.search {
+    background: none;
+}
+
+.mobileList {
+    display: none;
+}
+
+@media (min-width: 1920px) and (max-width: 2560px) {
+    
+}
+
+@media (min-width: 320px) and (max-width: 435px) {
+    .navbar {
+        /* width: 100%; */
+        padding: 0px 10px;
+        justify-content: space-between;
+    }
+
+    .navbar h1 {
+        font-size: 18px;
+    }
+
+    .mobileList {
+        position: absolute;
+        top: 90px;
+        margin: 10px;
+        left: 0px;
+        right: 0px;
+
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        gap: 20px;
+
+        background: aqua;
+        z-index: 999;
+    }
+
+    .signUp {
+        display: none;
+    }
+
+    .search {
+        display: none;
+    }
+
+    .menu {
+        display: flex;
+        background: none;
+    }
+
+    .menu img {
+        height: 35px;
+        width: 35px;
+    }
+}

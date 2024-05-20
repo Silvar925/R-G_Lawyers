@@ -1,0 +1,200 @@
+.aboutUSContainer {
+    display: flex;
+    gap: 44px;
+    flex-direction: column;
+    align-items: center;
+    padding: 80px 0px;
+}
+
+.sectionTitle {
+    color: rgb(0, 0, 0);
+    font-family: 'Merriweather';
+    font-size: 32px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.aboutUSContainer ul {
+    display: flex;
+    gap: 35px;
+    height: 597px;
+}
+
+.professionalismContainer {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    background-color: white;
+    padding: 0px 310px;
+}
+
+.professionalismContainer p {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    color: rgb(0, 0, 0);
+    font-family: 'Montserrat';
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.advantagesContainer {
+    display: flex;
+    gap: 44px;
+    flex-direction: column;
+    align-items: center;
+    padding: 80px 0px;
+}
+
+.advantagesContainer ul {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(2, auto);
+}
+
+.legalServicesСontainer {
+    display: flex;
+    gap: 44px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 0px;
+}
+
+.legalServicesСontainer ul {
+    display: grid;
+    gap: 46px;
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: repeat(2, auto);
+}
+
+.goToAll {
+    width: 293px;
+    height: 60px;
+    border: 2px solid rgb(159, 143, 96);
+    background: rgb(159, 143, 96);
+    color: white;
+    font-family: 'Merriweather';
+    font-size: 16px;
+
+    &:hover {
+        background-color: white;
+        color: rgb(159, 143, 96);
+        border: 2px solid rgb(159, 143, 96);
+    }
+}
+
+.traditionsContainer {
+    display: flex;
+    background-color: white;
+    margin-bottom: 80px;
+}
+
+.traditionsTextBox {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-between;
+    padding: 70px 145px;
+    align-items: center;
+}
+
+.traditionsTextBox img {
+    height: 90px;
+    width: 90px;
+}
+
+.traditionsTextBox p {
+    display: flex;
+    gap: 40px;
+    flex-direction: column;
+
+    color: rgb(0, 0, 0);
+    font-family: 'Montserrat';
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: 0px;
+    text-align: center;
+}
+
+@media (min-width: 320px) and (max-width: 450px) {
+    .aboutUSContainer {
+        gap: 20px;
+        padding: 20px 0px;
+    }
+
+    .aboutUSContainer ul {
+        flex-direction: column;
+    }
+
+    .sectionTitle h2 {
+        font-size: 18px;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        /* align-items: center; */
+        /* justify-content: center; */
+        padding: 0px 10px;
+    }
+
+    .professionalismContainer {
+        margin-top: 645px;
+        gap: 10px;
+        padding: 0px 10px;
+        padding-bottom: 20px;
+        flex-direction: column;
+    }
+
+    .professionalismContainer p {
+        font-size: 14px;
+    }
+
+    .professionalismContainer img {
+        width: 300px;
+        height: 490px;
+    }
+
+    .advantagesContainer {
+        padding: 30px 0px;
+        gap: 20px;
+    }
+
+    .advantagesContainer ul {
+        display: flex;
+        gap: 20px;
+        flex-direction: column;
+    }
+
+    .legalServicesСontainer {
+        padding-bottom: 20px;
+    }
+
+    .legalServicesСontainer ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .traditionsLeftIMG {
+        display: none;
+    }
+
+    .traditionsRightIMG {
+        display: none;
+    }
+
+    .traditionsTextBox {
+        display: flex;
+        gap: 20px;
+        flex-direction: column;
+        padding: 30px 0px;
+    }
+
+    .traditionsTextBox p {
+        font-size: 14px;
+    }
+}

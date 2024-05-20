@@ -1,0 +1,77 @@
+.lawyerCard {
+    display: flex;
+    height: 515px;
+    flex-direction: column;
+    gap: 16px;
+    text-align: center;
+    padding: 41px 26px;
+    background-color: white;
+}
+
+.lawyerCard header {
+    display: flex;
+    gap: 16px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.lawyerCard header img {
+    width: 275px;
+    height: 275px;
+    border-radius: 50%;
+}
+
+.lawyerCard header h2 {
+    color: rgb(0, 0, 0);
+    font-family: 'Montserrat';
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+}
+
+.lawyerCard header h3 {
+    color: rgb(159, 143, 96);
+    font-family: 'Montserrat';
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.info {
+    display: flex;
+    gap: 7px;
+    flex-direction: column;
+}
+
+.info p {
+    font-family: 'Montserrat';
+}
+
+@media (min-width: 320px) and (max-width: 450px) {
+    .lawyerCard {
+        padding: 20px 10px;
+        height: auto;
+        gap: 10px;
+    }
+
+    .lawyerCard header {
+        gap: 10px;
+    }
+
+    .lawyerCard header img {
+        width: 200px;
+        height: 200px;
+    }
+
+
+    .lawyerCard header h2 {
+        font-size: 16px;
+    }
+
+    .lawyerCard header h3 {
+        font-size: 14px;
+    }
+
+    .info p {
+        font-size: 14px;
+    }
+}

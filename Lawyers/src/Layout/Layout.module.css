@@ -1,0 +1,118 @@
+.bannerContainer {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+}
+
+.box {
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    padding: 0px 270px;
+}
+
+.left {
+    display: flex;
+    align-items: center;
+
+    flex-grow: 1;
+    flex-shrink: 1;
+    min-width: 0;
+
+    height: 500px;
+    width: 478px;
+}
+
+.right {
+    width: 730px;
+}
+
+.slide {
+    color: white;
+    display: flex;
+    gap: 120px;
+    flex-direction: column;
+    align-items: center;
+    height: 486px;
+}
+
+.slideText {
+    width: 554px;
+    display: flex;
+    gap: 40px;
+    flex-direction: column;
+}
+
+.slide h1 {
+    color: rgb(242, 242, 242);
+    font-family: 'Merriweather';
+    font-size: 65px;
+    font-weight: 400;
+}
+
+.slide p {
+    color: rgb(242, 242, 242);
+    font-family: 'Montserrat';
+    font-size: 18px;
+    text-align: center;
+    line-height: 150%;
+}
+
+@media (min-width: 1921px) and (max-width: 2560px) {
+    .slide h1 {
+        font-size: 60px;
+    }
+
+    .slide {
+        gap: 100px;
+    }
+
+    .box {
+        gap: 0px;
+        padding: 0px 500px;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 450px) {
+    .bannerContainer {
+        width: 100%;
+        height: 500px;
+    }
+
+    .box {
+        flex-direction: column;
+        padding: 0px;
+    }
+
+    .right img {
+        height: 200px;
+    }
+
+    .left {
+        width: 100%;
+    }
+
+    .slide {
+        width: 100%;
+        gap: 20px;
+    }
+
+    .slide h1 {
+        font-size: 16px;
+    }
+
+    .slideText {
+        width: 100%;
+    }
+
+    .slideText p {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .right {
+        display: none;
+        z-index: 999;
+        width: 100%;
+    }
+}

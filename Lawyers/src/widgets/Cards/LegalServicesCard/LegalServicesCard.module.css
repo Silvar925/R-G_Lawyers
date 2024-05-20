@@ -1,0 +1,28 @@
+.legalServicesCard {
+    display: flex;
+    gap: 16px;
+    flex-direction: column;
+}
+
+.legalServicesCard h2 {
+    font-family: 'Merriweather';
+    font-size: 40px;
+    font-weight: 600;
+    color: rgb(206, 206, 206);
+}
+
+.legalServicesCard p {
+    width: 408px;
+    color: rgb(0, 0, 0);
+    font-family: 'Montserrat';
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+@media (min-width: 320px) and (max-width: 450px)  {
+    .legalServicesCard p {
+        width: 100%;
+        font-size: 14px;
+    }
+}
