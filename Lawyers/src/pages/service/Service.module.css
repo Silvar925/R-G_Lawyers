@@ -1,21 +1,103 @@
-.criminalDefense {
+.container {
+    display: flex;
+    gap: 80px;
+    flex-direction: column;
     padding: 80px 0px;
+    width: auto;
+    align-items: center;
+}
+
+
+.criminalDefense {
     display: flex;
     gap: 44px;
     flex-direction: column;
-    align-items: center;
 }
 
 .sectionTitle h2 {
     color: rgb(0, 0, 0);
     font-family: 'Merriweather';
     font-size: 32px;
+    text-align: center;
 }
 
 .criminalDefense ul {
+    /* width: 1324px; */
     display: grid;
-    column-gap: 64px;
+    column-gap: 24px;
     row-gap: 24px;
-    grid-template-columns: repeat(2, auto);
+    grid-template-columns: repeat(2, 50%);
     grid-template-rows: repeat(4, auto);
+}
+
+.сivilСasesContainer {
+    display: flex;
+    gap: 44px;
+    flex-direction: column;
+}
+
+.сivilСasesContainer ul {
+    /* width: 1324px; */
+    display: grid;
+    column-gap: 24px;
+    row-gap: 24px;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(3, auto);
+}
+
+
+.administrativeProceedingsContainer {
+    display: flex;
+    gap: 44px;
+    flex-direction: column;
+}
+
+.administrativeProceedingsBox {
+    width: 1324px;
+    display: flex;
+    gap: 24px;
+    flex-direction: column;
+}
+
+.administrativeProceedingFirstUl {
+    display: flex;
+    gap: 24px;
+    flex-direction: column;
+}
+
+.administrativeProceedingSecondUl {
+    display: flex;
+    gap: 24px;
+}
+
+
+.container section {
+    width: 1300px;
+}
+
+
+
+@media (min-width: 320px) and (max-width: 450px)  {
+    .container {
+        padding: 20px 10px;
+        gap: 20px;
+    }
+
+    .container ul {
+        display: flex;
+        flex-direction: column;
+    }  
+
+    .container section {
+        gap: 20px;
+        width: 100%;
+    }
+
+    .administrativeProceedingsBox {
+        width: 100%;
+    }
+
+    .sectionTitle h2 {
+        font-size: 16px;
+    }
 }

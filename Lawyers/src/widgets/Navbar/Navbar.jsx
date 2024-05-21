@@ -20,8 +20,9 @@ export const Navbar = ({ classNames }) => {
                 <ul className={styles.mobileList}>
                     <li><NavLink to="/">ГЛАВНАЯ</NavLink></li>
                     <li><NavLink to="/service">ОКАЗЫВАЕМЫЕ УСЛУГИ</NavLink></li>
-                    <li><NavLink>ПРАКТИКА</NavLink></li>
-                    <li><NavLink>ГОНОРАР</NavLink></li>
+                    <li><NavLink to="/practice">ПРАКТИКА</NavLink></li>
+                    <li><NavLink to="/criminalDefense">ЗАЩИТА ПО УГОЛОВНЫМ ДЕЛАМ</NavLink></li>
+                    <li><NavLink to="/costServices">ГОНОРАР</NavLink></li>
                     <li><NavLink>КОНТАКТЫ</NavLink></li>
                 </ul>
             }
@@ -31,8 +32,9 @@ export const Navbar = ({ classNames }) => {
                 <ul className={styles.itemList}>
                     <li><NavLink to="/'">ГЛАВНАЯ</NavLink></li>
                     <li><NavLink to="/service">ОКАЗЫВАЕМЫЕ УСЛУГИ</NavLink></li>
-                    <li><NavLink>ПРАКТИКА</NavLink></li>
-                    <li><NavLink>ГОНОРАР</NavLink></li>
+                    <li><NavLink to="/practice">ПРАКТИКА</NavLink></li>
+                    <li><NavLink to="/criminalDefense">ЗАЩИТА ПО УГОЛОВНЫМ ДЕЛАМ</NavLink></li>
+                    <li><NavLink to="/costServices">ГОНОРАР</NavLink></li>
                     <li><NavLink>КОНТАКТЫ</NavLink></li>
                 </ul>
             }
