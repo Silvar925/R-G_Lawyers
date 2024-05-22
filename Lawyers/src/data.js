@@ -258,3 +258,50 @@ export const table = [
         price: 'от 25 000 руб. в месяц - от 30 000 руб. в месяц'
     }
 ]
+
+export const documentList = [
+    {
+        title: 'РЕШЕНИЕ СУДА №099390001',
+        date: 'Дата опубликования на сайте: 30.05.2023',
+    },
+    {
+        title: 'РЕШЕНИЕ СУДА №099390001',
+        date: 'Дата опубликования на сайте: 30.05.2023',
+    },
+    {
+        title: 'РЕШЕНИЕ СУДА №099390001',
+        date: 'Дата опубликования на сайте: 30.05.2023',
+    }
+]
+
+export const thanks = [
+    {
+        title: 'Land lights let be divided',
+        img: 'practice/thanks1.png',
+        subTitle: 'June 24, 2017',
+        text: `Ut enim ad minima veniam, quis nostrum
+        exercitationem ullam et suscipit laboriosam, nisi
+        ut aliquid ex ea commodi consequatur. Et
+        mollis, est non […]`
+    },
+
+    {
+        title: 'Signs likeness for may',
+        img: 'practice/thanks2.png',
+        subTitle: 'January 25, 2016',
+        text: `Ut enim ad minima veniam, quis nostrum
+        exercitationem ullam et suscipit laboriosam, nisi
+        ut aliquid ex ea commodi consequatur. Et
+        mollis, est non […]`
+    },
+
+    {
+        title: 'Seasons over bearing air',
+        img: 'practice/thanks3.png',
+        subTitle: 'February 3, 2016',
+        text: `Ut enim ad minima veniam, quis nostrum
+        exercitationem ullam et suscipit laboriosam, nisi
+        ut aliquid ex ea commodi consequatur. Et
+        mollis, est non […]`
+    }
+]

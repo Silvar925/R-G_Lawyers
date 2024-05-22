@@ -91,8 +91,76 @@ thead th {
     font-size: 20px;
 }
 
-tbody tr {
+tbody tr th {
     color: rgb(26, 26, 26);
     font-family: 'Montserrat';
     font-size: 18px;
+    font-weight: normal;
+}
+
+@media (min-width: 320px) and (max-width: 435px) {
+    .container {
+        padding: 20px 10px;
+        gap: 20px;
+    }
+
+    .costServicesContainer {
+        gap: 10px;
+    }
+
+    .costServicesContainer article {
+        flex-direction: column;
+        padding: 10px;
+        gap: 10px;
+    }
+
+    .costServicesContainer article p {
+        font-size: 14px;
+    }
+
+    .costServicesContainer header h2 {
+        font-size: 16px;
+        line-height: normal;
+    }
+
+    .costServicesContainer article img {
+        width: 100%;
+    }
+
+    .disclaimerContainer {
+        width: auto;
+    }
+
+    .disclaimerContainer p {
+        font-size: 16px;
+    }
+
+
+    .disclaimerPriceList {
+        width: auto;
+        font-size: 16px
+    }
+
+    .prcieListContainer {
+        gap: 10px
+        ;
+    }
+
+    .prcieListContainer table {
+        width: auto;
+    }
+
+    th {
+        padding: 10px;
+        background-color: white;
+        text-align: left;
+    }
+
+    thead th {
+        font-size: 16px;
+    }
+
+    tbody tr th {
+        font-size: 14px;
+    }
 }

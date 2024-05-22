@@ -1,0 +1,87 @@
+.documentCard {
+    width: 1300px;
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+}
+
+.documentCard header {
+    display: flex;
+    align-items: center;
+}
+
+.documentCard header hr {
+    width: 8px;
+    height: 110px;
+    margin: 0px 16px;
+    background: rgb(159, 143, 96);
+}
+
+.documentCard header h2 {
+    color: rgb(0, 0, 0);
+    font-family: 'Montserrat';
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 150%;
+}
+
+.body {
+    display: flex;
+    flex-direction: column;
+}
+
+.bodyBox {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.bodyBox p {
+    font-family: 'Montserrat';
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 150%;
+}
+
+.bodyBox a {
+    font-family: 'Montserrat';
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 150%;
+    color: rgb(159, 143, 96);
+}
+
+.body p {
+    font-family: 'Montserrat';
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 150%;
+}
+
+@media (min-width: 320px) and (max-width: 450px) {
+    .documentCard {
+        gap: 10px;
+        width: auto;
+    }
+
+    .documentCard header h2 {
+        font-size: 16px;
+    }
+
+    .bodyBox p {
+        font-family: 'Montserrat';
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 150%;
+    }
+
+    .documentCard header img {
+        height: 70px;
+        width: 70px;
+    }
+
+    .body p {
+        font-size: 14px;
+    }
+    
+}

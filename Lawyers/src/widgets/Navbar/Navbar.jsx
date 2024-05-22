@@ -5,12 +5,12 @@ import { useState } from "react"
 import search from "../../assets/navbar/search.svg"
 import menu from "../../assets/navbar/menu.svg"
 
-export const Navbar = ({ classNames }) => {
+export const Navbar = ({ color }) => {
     const [isClick, setIsClick] = useState(false)
     let mobileOrientation = (innerWidth >= 320 && innerWidth <= 450);
 
     return (
-        <header className={`${styles.navbar} ${classNames}`}>
+        <header className={`${styles.navbar} ${color === 'black' ? styles.navbarBlack : styles.navbarWhite}`}>
             <Link to="/">
                 <h1>R&B АДВОКАТЫ</h1>
             </Link>
@@ -30,7 +30,7 @@ export const Navbar = ({ classNames }) => {
             {
                 mobileOrientation === false &&
                 <ul className={styles.itemList}>
-                    <li><NavLink to="/'">ГЛАВНАЯ</NavLink></li>
+                    <li><NavLink to="/">ГЛАВНАЯ</NavLink></li>
                     <li><NavLink to="/service">ОКАЗЫВАЕМЫЕ УСЛУГИ</NavLink></li>
                     <li><NavLink to="/practice">ПРАКТИКА</NavLink></li>
                     <li><NavLink to="/criminalDefense">ЗАЩИТА ПО УГОЛОВНЫМ ДЕЛАМ</NavLink></li>
@@ -41,9 +41,9 @@ export const Navbar = ({ classNames }) => {
 
 
             <button className={styles.search}><img src={search} alt="search" /></button>
-            <button className={styles.signUp}>ЗАПИСАТЬСЯ НА КОНСУЛЬТАЦИЮ</button>
+            <button className={`${styles.signUp} ${ color === 'black' ? styles.signUpWhite : styles.signUpBlack}`}>ЗАПИСАТЬСЯ НА КОНСУЛЬТАЦИЮ</button>
 
-            <button className={styles.menu}
+            <button className={`${styles.menu}`}
                 onClick={() => setIsClick(!isClick)}
             ><img src={menu} alt="menuBurnger" /></button>
 

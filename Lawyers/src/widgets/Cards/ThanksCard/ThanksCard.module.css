@@ -1,0 +1,78 @@
+.thanksCard {
+    display: flex;
+    gap: 25px;
+    flex-direction: column;
+
+    width: 383px;
+    height: 650px;
+
+    background-color: white;
+}
+
+.thanksCard header {
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.thanksCard header h2 {
+    color: rgb(17, 17, 50);
+    font-family: 'Merriweather';
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 23px;
+    text-align: center;
+}
+
+.thanksCard header h3 {
+    color: rgb(130, 130, 130);
+    font-family: 'Merriweather';
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 13px;
+    text-align: center;
+}
+
+.thanksCard p {
+    color: rgb(130, 130, 130);
+    font-family: 'Merriweather';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+}
+
+.cardBox {
+    display: flex;
+    gap: 24px;
+    flex-direction: column;
+    padding: 37px 35px;
+}
+
+@media (min-width: 320px) and (max-width: 450px) {
+    .thanksCard img {
+        width: 100%;
+    }
+
+    .thanksCard header h2 {
+        font-size: 18px;
+    }
+
+    .thanksCard header h3 {
+        font-size: 16px;
+    }
+
+    .thanksCard p {
+        width: auto;
+        font-size: 14px;
+    }
+
+    .swiperBox {
+        width: 100%;
+    }
+
+    .cardBox {
+        padding: 20px;
+    }
+}
