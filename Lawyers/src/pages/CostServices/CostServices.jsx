@@ -13,23 +13,26 @@ export const CostServices = () => {
                 <section className={styles.bannerContainer}>
                     <Navbar color="white" />
 
-                    <div className={styles.bannerBox}>
-                        {
-                            mobileOrientation === true &&
-                            <img src="theFee.png" alt="theFree" />
-                        }
+                    <div className={styles.widthBannerBox}>
+                        <div className={styles.bannerBox}>
+                            {
+                                mobileOrientation === true &&
+                                <img src="theFee.png" alt="theFree" />
+                            }
 
-                        <div className={styles.bannerBoxText}>
-                            <Breadcrumb />
-                            <h1>Гонорар</h1>
+                            <div className={styles.bannerBoxText}>
+                                <Breadcrumb />
+                                <h1>Гонорар</h1>
+                            </div>
+
+                            {
+                                mobileOrientation === false &&
+                                <img src="theFee.png" alt="theFree" />
+                            }
+
                         </div>
-
-                        {
-                            mobileOrientation === false &&
-                            <img src="theFee.png" alt="theFree" />
-                        }
-
                     </div>
+
 
                 </section>
 
@@ -39,23 +42,26 @@ export const CostServices = () => {
                             <h2>Стоимость услуг по уголовным делам</h2>
                         </header>
 
-                        <article>
-                            <p>
-                                <span>
-                                    Стоимость услуг адвоката определяется соглашением сторон с учетом объема и сложности работы,
-                                    продолжительности времени, необходимого для ее выполнения, опыта и квалификации адвоката,
-                                    сроков, степени срочности выполнения работы и иных обстоятельств.
-                                    Так определено ч. 2 ст. 16 Кодекса профессиональной этики адвоката.
-                                </span>
-                                <span>
-                                    Решением Совета Адвокатской Палаты Карачаево-Черкесской Республики
-                                    (размещенном на официальном сайте Адвокатской палаты КЧР), определены размеры гонорара
-                                    адвокаты при заключении соглашения на оказание юридической помощи.
-                                </span>
-                            </p>
+                        <div className={styles.costServicesBox}>
+                            <article>
+                                <p>
+                                    <span>
+                                        Стоимость услуг адвоката определяется соглашением сторон с учетом объема и сложности работы,
+                                        продолжительности времени, необходимого для ее выполнения, опыта и квалификации адвоката,
+                                        сроков, степени срочности выполнения работы и иных обстоятельств.
+                                        Так определено ч. 2 ст. 16 Кодекса профессиональной этики адвоката.
+                                    </span>
+                                    <span>
+                                        Решением Совета Адвокатской Палаты Карачаево-Черкесской Республики
+                                        (размещенном на официальном сайте Адвокатской палаты КЧР), определены размеры гонорара
+                                        адвокаты при заключении соглашения на оказание юридической помощи.
+                                    </span>
+                                </p>
 
-                            <img src="costServices/scales.png" alt="scales" />
-                        </article>
+                                <img src="costServices/scales.png" alt="scales" />
+                            </article>
+
+                        </div>
                     </section>
 
                     <section className={styles.disclaimerContainer}>

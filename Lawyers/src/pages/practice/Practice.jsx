@@ -14,6 +14,8 @@ import { Footer } from '../../widgets/Footer/Footer'
 
 export const Practice = () => {
 
+    let mobileOrientation = (innerWidth >= 320 && innerWidth <= 450)
+
     return (
         <>
             <main>
@@ -70,7 +72,7 @@ export const Practice = () => {
                             {/* slidesPerView={2} */}
                             <Swiper className={styles.swiperBox}
                                 spaceBetween={30}
-                                slidesPerView={1}
+                                slidesPerView={ mobileOrientation === true ? 1 : 3 }
                                 onSlideChange={() => console.log('slide change')}
                                 onSwiper={(swiper) => console.log(swiper)}
                             >

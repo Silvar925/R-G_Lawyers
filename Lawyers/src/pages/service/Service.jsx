@@ -8,26 +8,30 @@ import { Footer } from "../../widgets/Footer/Footer"
 export const Service = () => {
     return (
         <>
-            <main >
+            <main>
 
                 <section className={styles.bannerContainer}>
                     <Navbar color="white" />
 
-                    <div className={styles.bannerBox}>
-                        <div className={styles.bannerContainerText}>
-                            <Breadcrumb />
-                            <header>
-                                <h2>Оказываемые услуги</h2>
-                            </header>
+                    <div className={styles.widthBannerBox}>
+                        <div className={styles.bannerBox}>
+                            <div className={styles.bannerContainerText}>
+                                <Breadcrumb />
+                                <header>
+                                    <h2>Оказываемые услуги</h2>
+                                </header>
 
-                            <p>
-                                Наши адвокаты оказывают квалифицированную юридическую помощь юридическим и
-                                физическим лицам. Представляем интересы клиентов в следующих сферах.
-                            </p>
+                                <p>
+                                    Наши адвокаты оказывают квалифицированную юридическую помощь юридическим и
+                                    физическим лицам. Представляем интересы клиентов в следующих сферах.
+                                </p>
+
+                            </div>
+
+                            <img src="serviceBanner.png" alt="serviceBanner" />
 
                         </div>
 
-                        <img src="serviceBanner.png" alt="serviceBanner" />
                     </div>
 
 
@@ -114,6 +118,7 @@ export const Service = () => {
 
 
                 </div>
+
 
 
             </main>

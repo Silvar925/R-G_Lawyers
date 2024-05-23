@@ -30,7 +30,7 @@ export const advantages = [
         color: 'black'
     },
     {
-        img: 'home/advantages/qualification.svg',
+        img: 'home/advantages/1.svg',
         title: 'Квалификация',
         text: `Подтверждённая квалификация – в настоящее время статус адвоката в состоянии получить не 
         все юристы – для этого необходимо иметь высшее юридическое образование, стаж по юридической 
@@ -49,7 +49,7 @@ export const advantages = [
         color: 'black'
     },
     {
-        img: 'home/advantages/opportunities.svg',
+        img: 'home/advantages/2.svg',
         title: 'Возможности',
         text: `Установленное Федеральным законом право адвоката собирать сведения, 
         необходимые для оказания юридической помощи, в том числе запрашивать 

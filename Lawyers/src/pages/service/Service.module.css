@@ -1,3 +1,7 @@
+.mainContainer {
+    width: 1300px;
+}
+
 .bannerContainer {
     display: flex;
     flex-direction: column;
@@ -26,15 +30,27 @@
     line-height: 150%;
 }
 
+.widthBannerBox {
+    display: flex;
+    justify-content: center;
+}
+
 .bannerBox {
     display: flex;
-    gap: 50px;
     align-items: center;
     justify-content: center;
+    width: 1300px;
+}
+
+.bannerBox img {
+    width: 746px;
 }
 
 .container {
     display: flex;
+
+    /*  */
+
     gap: 80px;
     flex-direction: column;
     padding: 80px 0px;
@@ -57,11 +73,11 @@
 }
 
 .criminalDefense ul {
-    /* width: 1324px; */
+    width: 100%;
     display: grid;
     column-gap: 24px;
     row-gap: 24px;
-    grid-template-columns: repeat(2, 50%);
+    grid-template-columns: repeat(2, auto);
     grid-template-rows: repeat(4, auto);
 }
 
@@ -76,7 +92,7 @@
     display: grid;
     column-gap: 24px;
     row-gap: 24px;
-    grid-template-columns: repeat(2, 50%);
+    grid-template-columns: repeat(2, auto);
     grid-template-rows: repeat(3, auto);
 }
 
@@ -88,7 +104,6 @@
 }
 
 .administrativeProceedingsBox {
-    width: 1324px;
     display: flex;
     gap: 24px;
     flex-direction: column;
@@ -105,6 +120,10 @@
     gap: 24px;
 }
 
+.administrativeProceedingSecondUl article {
+    flex: 1;
+    height: auto;
+}
 
 .container section {
     width: 1300px;
@@ -124,7 +143,7 @@
         padding-top: 10px;
         padding-right: 10px;
     }
-    
+
     .bannerContainerText header h2 {
         font-size: 16px;
     }
@@ -133,7 +152,7 @@
         width: 100%;
         font-size: 14px;
     }
-    
+
     .container {
         padding: 20px 10px;
         gap: 20px;

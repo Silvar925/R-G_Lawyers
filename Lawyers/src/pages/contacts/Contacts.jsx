@@ -26,7 +26,7 @@ export const Contacts = () => {
                             <p>advokat.ram@yandex.ru</p>
                             <p>Абдокова Бэла Хамсудовна</p>
                         </li>
-                        
+
                         <hr />
 
                         <li>
@@ -34,15 +34,18 @@ export const Contacts = () => {
                             <p>olesi13@mail.ru</p>
                         </li>
 
+                        <li>
+                            <div className={styles.adress}>
+                                <img src="coolicon.svg" alt="gps" />
+                                г. Черкесск, ул. Ворошилова 4
+                            </div>
+                        </li>
                     </ul>
-
-
-
                 </div>
                 <img src="contactBanner.png" alt="contactBanner" />
             </section>
 
-            <Footer className={styles.footer} />
+            <Footer className={styles.footer} background = 'transparent' />
         </main>
     )
 }

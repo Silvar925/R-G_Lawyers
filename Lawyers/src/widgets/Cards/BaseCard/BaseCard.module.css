@@ -32,12 +32,19 @@
 @media (min-width: 320px) and (max-width: 450px) {
     .baseCard {
         width: auto;
-        padding: 10px;
-        gap: 10px;
-        height: 400px;
+        padding: 30px;
+        gap: 30px;
+        align-items: center;
+        height: auto;
+    }
+
+    .baseCard header h2 {
+        font-size: 16px;
+        font-weight: 500;
     }
 
     .baseCard header {
+        align-items: center;
         gap: 10px;
     }
 

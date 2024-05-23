@@ -1,5 +1,6 @@
 .lawyerCard {
     display: flex;
+    width: auto;
     height: 515px;
     flex-direction: column;
     gap: 16px;

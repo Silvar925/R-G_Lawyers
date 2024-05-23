@@ -3,7 +3,9 @@ import { Link, NavLink } from "react-router-dom"
 import { useState } from "react"
 
 import search from "../../assets/navbar/search.svg"
+import searchWhite from "../../assets/navbar/searchWhite.svg"
 import menu from "../../assets/navbar/menu.svg"
+import menuWhite from "../../assets/navbar/menuWhite.svg"
 
 export const Navbar = ({ color, className }) => {
     const [isClick, setIsClick] = useState(false)
@@ -40,12 +42,12 @@ export const Navbar = ({ color, className }) => {
             }
 
 
-            <button className={styles.search}><img src={search} alt="search" /></button>
+            <button className={styles.search}><img src={color === 'black' ? search : searchWhite} alt="search" /></button>
             <button className={`${styles.signUp} ${color === 'black' ? styles.signUpWhite : styles.signUpBlack}`}>ЗАПИСАТЬСЯ НА КОНСУЛЬТАЦИЮ</button>
 
             <button className={`${styles.menu}`}
                 onClick={() => setIsClick(!isClick)}
-            ><img src={menu} alt="menuBurnger" /></button>
+            ><img src={color === 'black' ? menu : menuWhite} alt="menuBurnger" /></button>
 
         </header>
     )
