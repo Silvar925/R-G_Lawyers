@@ -5,12 +5,12 @@ import { useState } from "react"
 import search from "../../assets/navbar/search.svg"
 import menu from "../../assets/navbar/menu.svg"
 
-export const Navbar = ({ color }) => {
+export const Navbar = ({ color, className }) => {
     const [isClick, setIsClick] = useState(false)
     let mobileOrientation = (innerWidth >= 320 && innerWidth <= 450);
 
     return (
-        <header className={`${styles.navbar} ${color === 'black' ? styles.navbarBlack : styles.navbarWhite}`}>
+        <header className={`${styles.navbar} ${color === 'black' ? styles.navbarBlack : styles.navbarWhite} ${className}`}>
             <Link to="/">
                 <h1>R&B АДВОКАТЫ</h1>
             </Link>
@@ -23,7 +23,7 @@ export const Navbar = ({ color }) => {
                     <li><NavLink to="/practice">ПРАКТИКА</NavLink></li>
                     <li><NavLink to="/criminalDefense">ЗАЩИТА ПО УГОЛОВНЫМ ДЕЛАМ</NavLink></li>
                     <li><NavLink to="/costServices">ГОНОРАР</NavLink></li>
-                    <li><NavLink>КОНТАКТЫ</NavLink></li>
+                    <li><NavLink to="/contacts">КОНТАКТЫ</NavLink></li>
                 </ul>
             }
 
@@ -35,13 +35,13 @@ export const Navbar = ({ color }) => {
                     <li><NavLink to="/practice">ПРАКТИКА</NavLink></li>
                     <li><NavLink to="/criminalDefense">ЗАЩИТА ПО УГОЛОВНЫМ ДЕЛАМ</NavLink></li>
                     <li><NavLink to="/costServices">ГОНОРАР</NavLink></li>
-                    <li><NavLink>КОНТАКТЫ</NavLink></li>
+                    <li><NavLink to="/contacts">КОНТАКТЫ</NavLink></li>
                 </ul>
             }
 
 
             <button className={styles.search}><img src={search} alt="search" /></button>
-            <button className={`${styles.signUp} ${ color === 'black' ? styles.signUpWhite : styles.signUpBlack}`}>ЗАПИСАТЬСЯ НА КОНСУЛЬТАЦИЮ</button>
+            <button className={`${styles.signUp} ${color === 'black' ? styles.signUpWhite : styles.signUpBlack}`}>ЗАПИСАТЬСЯ НА КОНСУЛЬТАЦИЮ</button>
 
             <button className={`${styles.menu}`}
                 onClick={() => setIsClick(!isClick)}

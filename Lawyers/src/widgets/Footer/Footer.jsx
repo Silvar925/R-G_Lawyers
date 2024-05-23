@@ -2,9 +2,9 @@ import styles from "./Footer.module.css"
 
 import alazar from "../../assets/footer/alazar_light.svg"
 
-export const Footer = () => {
+export const Footer = ({ className }) => {
     return (
-        <footer>
+        <footer className={className}>
             <div className={styles.left} >
                 <h1>R&B АДВОКАТЫ</h1>
 

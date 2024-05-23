@@ -1,9 +1,53 @@
+.bannerContainer {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+}
+
+.bannerSwiper {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 0px 230px;
+}
+
 .aboutUSContainer {
     display: flex;
     gap: 44px;
     flex-direction: column;
     align-items: center;
     padding: 80px 0px;
+}
+
+.bannerSlide {
+    display: flex;
+    gap: 120px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bannerSlideText {
+    display: flex;
+    gap: 40px;
+    flex-direction: column;
+}
+
+.bannerSlide header h2 {
+    color: rgb(242, 242, 242);
+    font-family: 'Merriweather';
+    font-size: 72px;
+    font-weight: 400;
+    line-height: 90px;
+    letter-spacing: 0%;
+}
+
+.bannerSlideText P {
+    color: rgb(242, 242, 242);
+    font-family: 'Montserrat';
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 150%;
+    text-align: center;
 }
 
 .sectionTitle {
@@ -55,6 +99,7 @@
 }
 
 .legalServicesСontainer {
+    width: 1920px;
     display: flex;
     gap: 44px;
     flex-direction: column;
@@ -121,9 +166,30 @@
 }
 
 @media (min-width: 320px) and (max-width: 450px) {
+    .bannerSlide {
+        gap: 10px;
+    }
+
+    .bannerImg {
+        display: none;
+    }
+
+    .bannerSwiper {
+        padding: 0px 10px;
+        padding-bottom: 20px;
+    }
+
     .aboutUSContainer {
         gap: 20px;
         padding: 20px 0px;
+    }
+
+    .bannerSlide header h2 {
+        font-size: 16px;
+    }
+
+    .bannerSlideText p {
+        font-size: 14px;
     }
 
     .aboutUSContainer ul {
@@ -139,6 +205,10 @@
         flex-direction: column;
         /* align-items: center; */
         /* justify-content: center; */
+        /* padding: 0px 10px; */
+    }
+
+    .temp {
         padding: 0px 10px;
     }
 

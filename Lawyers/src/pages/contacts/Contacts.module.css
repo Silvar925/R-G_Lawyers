@@ -1,0 +1,75 @@
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.bannerContainer {
+    display: flex;
+    gap: 200px;
+    height: 100%;
+    background-color: black;
+    align-items: center;
+    justify-content: center;
+}
+
+.bannerContainer img {
+    width: 936px;
+    height: 1336;
+}
+
+.bannerBox {
+    display: flex;
+    flex-direction: column;
+}
+
+.bannerBox h1 {
+    margin-top: 29px;
+    margin-bottom: 44px;
+    color: rgb(255, 255, 255);
+    font-family: 'Merriweather';
+    font-size: 48px;
+    font-weight: 400;
+}
+
+.bannerBox ul {
+    display: flex;
+    gap: 16px;
+    flex-direction: column;
+    color: white;
+}
+
+.bannerBox ul hr {
+    width: 70px;
+    background-color: rgb(159, 143, 96);
+    color: rgb(159, 143, 96);
+    height: 5px;
+    border: none;
+    outline: none;
+}
+
+.bannerBox ul li {
+    display: flex;
+    gap: 16px;
+    flex-direction: column;
+}
+
+.bannerBox ul li p {
+    color: rgb(255, 255, 255);
+    font-family: 'Montserrat';
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+
+@media (min-width: 320px) and (max-width: 435px) {
+    .bannerContainer {
+        padding-top: 20px;
+        gap: 20px;
+        flex-direction: column;
+    }
+
+    .bannerContainer img {
+        width: 100%;
+    }
+}

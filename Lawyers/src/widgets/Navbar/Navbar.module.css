@@ -107,7 +107,7 @@
 
 @media (min-width: 320px) and (max-width: 435px) {
     .navbar {
-        /* width: 100%; */
+        width: auto;
         padding: 0px 10px;
         justify-content: space-between;
     }

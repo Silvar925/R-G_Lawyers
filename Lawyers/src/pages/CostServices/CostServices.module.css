@@ -1,3 +1,28 @@
+.bannerContainer {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+}
+
+.bannerBox {
+    display: flex;
+    gap: 200px;
+    justify-content: center;
+    align-items: center;
+}
+
+.bannerBoxText {
+    display: flex;
+    flex-direction: column;
+}
+
+.bannerBoxText h1 {
+    color: rgb(255, 255, 255);
+    font-family: 'Merriweather';
+    font-size: 48px;
+    font-weight: 400;
+}
+
 .container {
     display: flex;
     gap: 80px;
@@ -99,6 +124,16 @@ tbody tr th {
 }
 
 @media (min-width: 320px) and (max-width: 435px) {
+    .bannerBox {
+        flex-direction: column;
+        gap: 10px;
+        padding-bottom: 10px;
+    }
+
+    .bannerBox img {
+        width: 100%;
+    }
+    
     .container {
         padding: 20px 10px;
         gap: 20px;
@@ -142,8 +177,7 @@ tbody tr th {
     }
 
     .prcieListContainer {
-        gap: 10px
-        ;
+        gap: 10px;
     }
 
     .prcieListContainer table {

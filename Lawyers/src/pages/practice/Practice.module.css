@@ -1,3 +1,35 @@
+.bannerContainer {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+}
+
+.bannerBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bannerBox h1 {
+    color: rgb(255, 255, 255);
+    font-family: 'Merriweather';
+    font-size: 38px;
+    font-weight: 700;
+}
+
+.bannerBoxText {
+    display: flex;
+    gap: 300px;
+    align-items: center;
+}
+
+.bannerBoxTextLeft {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+
+
 .container {
     display: flex;
     gap: 80px;
@@ -65,6 +97,16 @@
 }
 
 @media (min-width: 320px) and (max-width: 450px) {
+    .bannerBoxText {
+        gap: 20px;
+        flex-direction: column;
+        align-items: left;
+    }
+
+    .bannerBoxText img {
+        width: 100%;
+    }
+
     .thanksContainer {
         gap: 20px;
     }

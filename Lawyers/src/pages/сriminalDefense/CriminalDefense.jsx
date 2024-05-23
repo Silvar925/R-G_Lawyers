@@ -1,10 +1,32 @@
 import styles from "./CriminalDefense.module.css"
 import { CriminalDefenseCard } from "../../widgets/Cards/CriminalDefenseCard/CriminalDefenseCard"
 import { criminalDefense } from "../../data"
+import { Navbar } from "../../widgets/Navbar/Navbar"
+import { Breadcrumb } from "../../widgets/Breadcrumb/Breadcrumb"
 
 export const CriminalDefense = () => {
     return (
         <main className={styles.container}>
+            <section className={styles.bannerContainer}>
+                <Navbar color="white" />
+
+                <div className={styles.bannerBox}>
+                    <Breadcrumb />
+
+                    <div className={styles.bannerBoxText}>
+                        <h2>Защита по уголовным делам</h2>
+                        <p>
+                            Не знание закона не освобождает от ответственности!
+                            Защиту по уголовным делам на территории России имеют право оказывать лица с действующим статусом адвоката!
+                            Уголовные дела (защита в уголовном процессе) - это один из основных сфер нашей практики , в которой наработан огромный опыт у уголовного адвоката.
+                        </p>
+                    </div>
+
+                </div>
+
+            </section>
+
+
             <section className={styles.criminalDefense}>
                 <ul>
                     {

@@ -1,0 +1,32 @@
+.breadcrumb {
+    display: flex;
+    padding: 0;
+}
+
+.breadcrumb ol {
+    display: flex;
+}
+
+.breadcrumb ol li a {
+    color: white;
+}
+
+.breadcrumb-item {
+    margin-right: 5px;
+    position: relative;
+}
+
+.breadcrumb-item a {
+    text-decoration: none;
+    color: white;
+}
+
+.breadcrumb-item::after {
+    content: "→";
+    margin-left: 5px;
+    color: white;
+}
+
+.breadcrumb-item:last-child::after {
+    content: "";
+}

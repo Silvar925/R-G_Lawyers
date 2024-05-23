@@ -15,9 +15,7 @@ export const ThanksCard = ({ title, subTitle, text, img }) => {
     console.log()
 
     return (
-        <article className={styles.thanksCard} style={{
-            // width: getWidth()
-        }}>
+        <article className={styles.thanksCard} >
             <img src={img} alt="card" />
 
             <div className={styles.cardBox}>
