@@ -1,14 +1,25 @@
+.mainContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mainBox {
+    width: 1300px;
+}
+
 .bannerContainer {
     display: flex;
     flex-direction: column;
     background-color: black;
+    align-items: center;
 }
 
 .bannerSwiper {
+    width: 1300px;
     display: flex;
     align-items: center;
     gap: 20px;
-    padding: 0px 230px;
 }
 
 .aboutUSContainer {
@@ -19,7 +30,8 @@
     padding: 80px 0px;
 }
 
-.bannerSlide {
+
+.bannerSlideBox {
     display: flex;
     gap: 120px;
     flex-direction: column;
@@ -32,16 +44,14 @@
     flex-direction: column;
 }
 
-.bannerSlide header h2 {
+.bannerSlideBox header h2 {
     color: rgb(242, 242, 242);
     font-family: 'Merriweather';
-    font-size: 72px;
+    font-size: 69px;
     font-weight: 400;
-    line-height: 90px;
-    letter-spacing: 0%;
 }
 
-.bannerSlideText P {
+.bannerSlideBox p {
     color: rgb(242, 242, 242);
     font-family: 'Montserrat';
     font-size: 18px;
@@ -60,7 +70,8 @@
 
 .aboutUSContainer ul {
     display: flex;
-    gap: 35px;
+    width: 100%;
+    justify-content: space-between;
     height: 597px;
 }
 
@@ -69,7 +80,7 @@
     align-items: center;
     gap: 35px;
     background-color: white;
-    padding: 0px 310px;
+    /* padding: 0px 310px; */
 }
 
 .professionalismContainer p {
@@ -86,6 +97,7 @@
 
 .advantagesContainer {
     display: flex;
+    width: 100%;
     gap: 44px;
     flex-direction: column;
     align-items: center;
@@ -134,15 +146,14 @@
 .traditionsContainer {
     display: flex;
     background-color: white;
-    margin-bottom: 80px;
+    /* margin-bottom: 80px; */
 }
 
 .traditionsTextBox {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 100vw;
     justify-content: space-between;
-    padding: 70px 145px;
     align-items: center;
 }
 
@@ -188,7 +199,7 @@
         font-size: 16px;
     }
 
-    .bannerSlideText p {
+    .bannerSlideBox p {
         font-size: 14px;
     }
 
@@ -208,7 +219,7 @@
         /* padding: 0px 10px; */
     }
 
-    .temp {
+    .mainContainer {
         padding: 0px 10px;
     }
 

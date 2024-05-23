@@ -13,7 +13,6 @@ import { Breadcrumb } from '../../widgets/Breadcrumb/Breadcrumb';
 import { Footer } from '../../widgets/Footer/Footer'
 
 export const Practice = () => {
-    const 
 
     return (
         <>

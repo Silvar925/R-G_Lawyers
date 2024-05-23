@@ -1,5 +1,5 @@
 .baseCard {
-    width: 351px;
+    width: auto;
     height: 527px;
     display: flex;
     gap: 54px;
