@@ -99,13 +99,13 @@
 }
 
 .legalServicesСontainer {
-    width: 1920px;
     display: flex;
     gap: 44px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 80px 0px;
+    background-color: white;    
 }
 
 .legalServicesСontainer ul {
@@ -225,7 +225,7 @@
     }
 
     .professionalismContainer img {
-        width: 300px;
+        width: 100%;
         height: 490px;
     }
 
@@ -241,7 +241,7 @@
     }
 
     .legalServicesСontainer {
-        padding-bottom: 20px;
+        padding: 20px 10px;
     }
 
     .legalServicesСontainer ul {

@@ -8,8 +8,8 @@
 }
 
 .navbarBlack {
-    backdrop-filter: blur(8px);
-    background: rgba(0, 0, 0, 0.4);
+    /* backdrop-filter: blur(8px); */
+    /* background: rgba(0, 0, 0, 0.4); */
 }
 
 .navbarWhite {
@@ -112,6 +112,10 @@
         justify-content: space-between;
     }
 
+    .navbarBlack {
+        background-color: black;
+    }
+
     .navbar h1 {
         font-size: 18px;
     }
@@ -128,7 +132,7 @@
         padding: 10px;
         gap: 20px;
 
-        background: aqua;
+        background: black;
         z-index: 999;
     }
 
