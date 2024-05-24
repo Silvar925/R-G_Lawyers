@@ -1,0 +1,58 @@
+.childWindowContainer {
+    position: absolute;
+    background-color: white;
+
+    width: 590px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    display: flex;
+    gap: 48px;
+    padding: 50px;
+    flex-direction: column;
+}
+
+
+.title {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.title h1 {
+    font-family: 'Merriweather';
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 41px;
+}
+
+.title button {
+    background: none;
+    cursor: pointer;
+}
+
+.childWindowBox {
+    display: flex;
+    gap: 16px;
+    flex-direction: column;
+}
+
+.btnContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.childWindowContainer label {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Montserrat';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.childWindowContainer label p {
+    width: 530px;
+}

@@ -7,7 +7,7 @@ import searchWhite from "../../assets/navbar/searchWhite.svg"
 import menu from "../../assets/navbar/menu.svg"
 import menuWhite from "../../assets/navbar/menuWhite.svg"
 
-export const Navbar = ({ color, className }) => {
+export const Navbar = ({ color, className, buttonOnclick }) => {
     const [isClick, setIsClick] = useState(false)
     let mobileOrientation = (innerWidth >= 320 && innerWidth <= 450);
 
@@ -43,7 +43,7 @@ export const Navbar = ({ color, className }) => {
 
 
             <button className={styles.search}><img src={color === 'black' ? search : searchWhite} alt="search" /></button>
-            <button className={`${styles.signUp} ${color === 'black' ? styles.signUpWhite : styles.signUpBlack}`}>ЗАПИСАТЬСЯ НА КОНСУЛЬТАЦИЮ</button>
+            <button className={`${styles.signUp} ${color === 'black' ? styles.signUpWhite : styles.signUpBlack}`} onClick={buttonOnclick}>ЗАПИСАТЬСЯ НА КОНСУЛЬТАЦИЮ</button>
 
             <button className={`${styles.menu}`}
                 onClick={() => setIsClick(!isClick)}

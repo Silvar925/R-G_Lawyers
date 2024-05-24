@@ -303,5 +303,15 @@ export const thanks = [
         exercitationem ullam et suscipit laboriosam, nisi
         ut aliquid ex ea commodi consequatur. Et
         mollis, est non […]`
+    },
+
+    {
+        title: 'Seasons over bearing air',
+        img: 'practice/thanks3.png',
+        subTitle: 'February 3, 2016',
+        text: `Ut enim ad minima veniam, quis nostrum
+        exercitationem ullam et suscipit laboriosam, nisi
+        ut aliquid ex ea commodi consequatur. Et
+        mollis, est non […]`
     }
 ]

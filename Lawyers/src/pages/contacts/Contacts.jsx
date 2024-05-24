@@ -9,43 +9,46 @@ export const Contacts = () => {
             <Navbar color="black" className={styles.header} />
 
             <section className={styles.bannerContainer}>
-                <div className={styles.bannerBox}>
+                <div >
                     <Breadcrumb />
+                    <div className={styles.bannerBox}>
+                        <h1>Контакты</h1>
 
-                    <h1>Контакты</h1>
+                        <ul>
+                            <li>
+                                <p>УЗДЕНОВ РАМИЛЬ ХАСАНОВИЧ</p>
+                            </li>
 
-                    <ul>
-                        <li>
-                            <p>УЗДЕНОВ РАМИЛЬ ХАСАНОВИЧ</p>
-                        </li>
+                            <hr />
 
-                        <hr />
+                            <li>
+                                <p>+7 918 711-77-17</p>
+                                <p>advokat.ram@yandex.ru</p>
+                                <p>Абдокова Бэла Хамсудовна</p>
+                            </li>
 
-                        <li>
-                            <p>+7 918 711-77-17</p>
-                            <p>advokat.ram@yandex.ru</p>
-                            <p>Абдокова Бэла Хамсудовна</p>
-                        </li>
+                            <hr />
 
-                        <hr />
+                            <li>
+                                <p>+7 928 394-64-22</p>
+                                <p>olesi13@mail.ru</p>
+                            </li>
 
-                        <li>
-                            <p>+7 928 394-64-22</p>
-                            <p>olesi13@mail.ru</p>
-                        </li>
+                            <li>
+                                <div className={styles.adress}>
+                                    <img src="coolicon.svg" alt="gps" />
+                                    г. Черкесск, ул. Ворошилова 4
+                                </div>
+                            </li>
+                        </ul>
 
-                        <li>
-                            <div className={styles.adress}>
-                                <img src="coolicon.svg" alt="gps" />
-                                г. Черкесск, ул. Ворошилова 4
-                            </div>
-                        </li>
-                    </ul>
+                    </div>
+
                 </div>
                 <img src="contactBanner.png" alt="contactBanner" />
             </section>
 
-            <Footer className={styles.footer} background = 'transparent' />
+            <Footer className={styles.footer} background='black' />
         </main>
     )
 }

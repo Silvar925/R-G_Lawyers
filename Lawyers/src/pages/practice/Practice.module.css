@@ -8,6 +8,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 412px;
 }
 
 .bannerBox h1 {
@@ -18,8 +19,10 @@
 }
 
 .bannerBoxText {
+    width: 1300px;
     display: flex;
-    gap: 300px;
+    justify-content: space-between;
+    height: 100%;
     align-items: center;
 }
 
@@ -94,11 +97,16 @@
 }
 
 .swiperContainer button {
+    cursor: pointer;
+}
+
+.swiperContainer button {
     background: none;
 }
 
 @media (min-width: 320px) and (max-width: 450px) {
     .bannerBoxText {
+        width: auto;
         gap: 20px;
         flex-direction: column;
         align-items: left;
@@ -154,5 +162,6 @@
 
     .bannerBoxTextLeft h1 {
         font-size: 20px;
+        text-align: center;
     }
 }

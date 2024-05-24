@@ -12,8 +12,10 @@ import { Navbar } from "../../widgets/Navbar/Navbar"
 import { Breadcrumb } from '../../widgets/Breadcrumb/Breadcrumb';
 import { Footer } from '../../widgets/Footer/Footer'
 
-export const Practice = () => {
+import { useState } from 'react';
 
+export const Practice = () => {
+    const [swiper, setSwiper] = useState(null);
     let mobileOrientation = (innerWidth >= 320 && innerWidth <= 450)
 
     return (
@@ -62,32 +64,32 @@ export const Practice = () => {
                             <h2>Благодарности</h2>
                         </header>
 
-
                         <div className={styles.swiperContainer}>
-                            <button className={styles.btnSliderLeft}>
+                            <button
+                                className={styles.btnSliderLeft}
+                                onClick={() => swiper && swiper.slidePrev()}
+                            >
                                 <img src="practice/left.svg" alt="left" />
                             </button>
 
-                            {/* spaceBetween={50} */}
-                            {/* slidesPerView={2} */}
-                            <Swiper className={styles.swiperBox}
+                            <Swiper
+                                className={styles.swiperBox}
                                 spaceBetween={30}
-                                slidesPerView={ mobileOrientation === true ? 1 : 3 }
-                                onSlideChange={() => console.log('slide change')}
-                                onSwiper={(swiper) => console.log(swiper)}
+                                slidesPerView={mobileOrientation ? 1 : 3}
+                                onSwiper={setSwiper} // Устанавливаем экземпляр Swiper в состояние
+                                navigation={{ prevEl: '.btnSliderLeft', nextEl: '.btnSliderRight' }}
                             >
-                                {
-                                    thanks.map((item, index) => {
-                                        return (
-                                            <SwiperSlide className={styles.slide} key={index}>
-                                                <ThanksCard title={item.title} subTitle={item.subTitle} text={item.text} img={item.img} />
-                                            </SwiperSlide>
-                                        )
-                                    })
-                                }
+                                {thanks.map((item, index) => (
+                                    <SwiperSlide className={styles.slide} key={index}>
+                                        <ThanksCard title={item.title} subTitle={item.subTitle} text={item.text} img={item.img} />
+                                    </SwiperSlide>
+                                ))}
                             </Swiper>
 
-                            <button className={styles.btnSliderRight}>
+                            <button
+                                className={styles.btnSliderRight}
+                                onClick={() => swiper && swiper.slideNext()}
+                            >
                                 <img src="practice/right.svg" alt="right" />
                             </button>
                         </div>

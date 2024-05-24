@@ -16,6 +16,10 @@
     align-items: center;
 }
 
+.bannerBox img {
+    height: 412px;
+}
+
 .bannerBoxText {
     display: flex;
     flex-direction: column;

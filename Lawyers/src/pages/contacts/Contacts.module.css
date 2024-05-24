@@ -5,8 +5,8 @@
 }
 
 .header {
-    width: 100%;
-    position: absolute;
+    /* position: absolute; */
+    background-color: black;
 }
 
 .bannerContainer {
@@ -92,6 +92,10 @@
     height: 40px;
 }
 
+footer {
+    margin-top: 0px;
+}
+
 .footer {
     backdrop-filter: blur(8px);
     background: rgba(0, 0, 0, 0.4);
@@ -106,6 +110,10 @@
         margin-top: 0px;
         gap: 20px;
         flex-direction: column;
+    }
+    
+    footer {
+        margin-top: 0px;
     }
 
     .footer {

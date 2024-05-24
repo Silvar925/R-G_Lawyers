@@ -1,14 +1,38 @@
 import styles from "./Breadcrumb.module.css"
+import { BrowserRouter as Router, Route, Link, Routes, useLocation } from 'react-router-dom';
 
-export const Breadcrumb = () => {
+import arrow from "../../assets/arrow.svg"
+
+export const Breadcrumb = ({ style }) => {
+    let location = useLocation();
+    let pathnames = location.pathname.split('/').filter(x => x);
+
     return (
-        <nav aria-label="breadcrumb" className={styles.breadcrumb}>
-            <ol className={styles.breadcrumb}>
-                <li className={styles.breadcrumb}><a href="/">Главная</a></li>
-                <li className={styles.breadcrumb}><a href="/student">Студенту</a></li>
-                <li className={styles.breadcrumb} aria-current="page">Расписание</li>
-            </ol>
-        </nav>
+        <nav>
+            <ul className={styles.breadcrumb}>
+                <li>
+                    <Link to="/">ГЛАВНАЯ</Link>
+                </li>
+                {pathnames.map((value, index) => {
+                    const to = `/${pathnames.slice(0, index + 1).join('/')}`;
 
-    )
+                    return (
+                        <li key={to}>
+                            <img src={arrow} alt="arrow" />
+                            <Link to={to}>{dictionary[value]}</Link>
+                        </li>
+                    );
+                })}
+            </ul>
+        </nav>
+    );
+};
+
+
+const dictionary = {
+    'service': 'ОКАЗЫВАЕМЫЕ УСЛУГИ',
+    'practice': 'ПРАКТИКА',
+    'criminalDefense': 'ЗАЩИТА ПО УГОЛОВНЫМ ДЕЛАМ',
+    'costServices': 'ГОНОРАР',
+    'contacts': 'КОНТАКТЫ'
 }

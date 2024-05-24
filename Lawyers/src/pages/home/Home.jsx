@@ -5,14 +5,47 @@ import { advantages, servicesList } from "../../data"
 import { LegalServicesCard } from "../../widgets/Cards/LegalServicesCard/LegalServicesCard"
 import { Navbar } from "../../widgets/Navbar/Navbar"
 import { Footer } from "../../widgets/Footer/Footer"
+import { useState } from "react"
+import { ChildWindow } from "../../widgets/ChildWindow/ChildWindow"
+import { Button } from "../../Shared/Button/Button"
 
 export const Home = () => {
     const mobileOrientation = (innerWidth >= 320 && innerWidth <= 450)
+    const [isDialogWindow, setIsDialogWindow] = useState(false)
+
+    const clickButtonHandler = () => {
+        setIsDialogWindow(!isDialogWindow);
+
+        if (!isDialogWindow) {
+            document.body.classList.add('no-scroll');
+        } else {
+            document.body.classList.remove('no-scroll');
+        }
+    };
+
+    const btnClose = () => {
+        setIsDialogWindow(false)
+
+        if (!isDialogWindow) {
+            document.body.classList.add('no-scroll');
+        } else {
+            document.body.classList.remove('no-scroll');
+        }
+    }
 
     return (
         <main>
+
+            {
+                isDialogWindow === true &&
+                <ChildWindow buttonClose={() => btnClose()} />
+
+            }
+
+
+
             <section className={styles.bannerContainer}>
-                <Navbar color="black" className={styles.navbarMobile}/>
+                <Navbar color="black" className={styles.navbarMobile} buttonOnclick={() => clickButtonHandler()} />
 
                 <div className={styles.bannerSwiper}>
                     {
@@ -143,7 +176,7 @@ export const Home = () => {
                         }
                     </ul>
 
-                    <button className={styles.goToAll}>ПЕРЕЙТИ КО ВСЕМ УСЛУГАМ</button>
+                    <Button url="/service" text="ПЕРЕЙТИ КО ВСЕМ УСЛУГАМ" />
                 </div>
 
             </section>
