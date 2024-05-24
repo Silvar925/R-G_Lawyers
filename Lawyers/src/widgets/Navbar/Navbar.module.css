@@ -103,6 +103,23 @@
     display: none;
 }
 
+.signUpMobile {
+    background: none;
+    color: white;
+    padding: 10px;
+    border: 1px solid white;
+
+    &:hover {
+        background-color: white;
+        color: black;
+    }
+
+    &:active {
+        background-color: white;
+        color: black;
+    }
+}
+
 @media (min-width: 1920px) and (max-width: 2560px) {}
 
 @media (min-width: 320px) and (max-width: 435px) {

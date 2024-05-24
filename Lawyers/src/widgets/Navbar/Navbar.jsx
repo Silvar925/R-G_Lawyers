@@ -11,6 +11,11 @@ export const Navbar = ({ color, className, buttonOnclick }) => {
     const [isClick, setIsClick] = useState(false)
     let mobileOrientation = (innerWidth >= 320 && innerWidth <= 450);
 
+    const mobileBtnClickHandler = () => {
+        buttonOnclick()
+        setIsClick(false)
+    }
+
     return (
         <header className={`${styles.navbar} ${color === 'black' ? styles.navbarBlack : styles.navbarWhite} ${className}`}>
             <Link to="/">
@@ -26,6 +31,10 @@ export const Navbar = ({ color, className, buttonOnclick }) => {
                     <li><NavLink to="/criminalDefense">ЗАЩИТА ПО УГОЛОВНЫМ ДЕЛАМ</NavLink></li>
                     <li><NavLink to="/costServices">ГОНОРАР</NavLink></li>
                     <li><NavLink to="/contacts">КОНТАКТЫ</NavLink></li>
+
+                    <li><button className={styles.signUpMobile}
+                        onClick={mobileBtnClickHandler}
+                    >ЗАПИСАТЬСЯ НА КОНСУЛЬТАЦИЮ</button></li>
                 </ul>
             }
 

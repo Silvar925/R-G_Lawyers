@@ -4,13 +4,44 @@ import { criminalDefense } from "../../data"
 import { Navbar } from "../../widgets/Navbar/Navbar"
 import { Breadcrumb } from "../../widgets/Breadcrumb/Breadcrumb"
 import { Footer } from "../../widgets/Footer/Footer"
+import { useState } from "react"
+import { ChildWindow } from "../../widgets/ChildWindow/ChildWindow"
+
 
 export const CriminalDefense = () => {
+    const [isDialogWindow, setIsDialogWindow] = useState(false)
+
+    const clickButtonHandler = () => {
+        setIsDialogWindow(!isDialogWindow);
+
+        if (!isDialogWindow) {
+            document.body.classList.add('no-scroll');
+        } else {
+            document.body.classList.remove('no-scroll');
+        }
+    };
+
+    const btnClose = () => {
+        setIsDialogWindow(false)
+
+        if (!isDialogWindow) {
+            document.body.classList.add('no-scroll');
+        } else {
+            document.body.classList.remove('no-scroll');
+        }
+    }
+    
     return (
         <>
             <main >
+
+                {
+                    isDialogWindow === true &&
+                    <ChildWindow buttonClose={() => btnClose()} />
+
+                }
                 <section className={styles.bannerContainer}>
-                    <Navbar color="white" />
+                    <Navbar color="white" buttonOnclick={() => clickButtonHandler()}/>
 
                     <div className={styles.widthBannerBox}>
                         <div className={styles.bannerBox}>

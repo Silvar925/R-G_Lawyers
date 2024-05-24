@@ -2,11 +2,42 @@ import styles from "./Contacts.module.css"
 import { Navbar } from "../../widgets/Navbar/Navbar"
 import { Footer } from "../../widgets/Footer/Footer"
 import { Breadcrumb } from "../../widgets/Breadcrumb/Breadcrumb"
+import { useState } from "react"
+import { ChildWindow } from "../../widgets/ChildWindow/ChildWindow"
 
 export const Contacts = () => {
+    const [isDialogWindow, setIsDialogWindow] = useState(false)
+
+    const clickButtonHandler = () => {
+        setIsDialogWindow(!isDialogWindow);
+
+        if (!isDialogWindow) {
+            document.body.classList.add('no-scroll');
+        } else {
+            document.body.classList.remove('no-scroll');
+        }
+    };
+
+    const btnClose = () => {
+        setIsDialogWindow(false)
+
+        if (!isDialogWindow) {
+            document.body.classList.add('no-scroll');
+        } else {
+            document.body.classList.remove('no-scroll');
+        }
+    }
+
     return (
         <main className={styles.container}>
-            <Navbar color="black" className={styles.header} />
+
+            {
+                isDialogWindow === true &&
+                <ChildWindow buttonClose={() => btnClose()} />
+
+            }
+
+            <Navbar color="black" className={styles.header} buttonOnclick={() => clickButtonHandler()}/>
 
             <section className={styles.bannerContainer}>
                 <div >

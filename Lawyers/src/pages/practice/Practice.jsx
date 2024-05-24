@@ -14,16 +14,47 @@ import { Footer } from '../../widgets/Footer/Footer'
 
 import { useState } from 'react';
 
+import { ChildWindow } from '../../widgets/ChildWindow/ChildWindow';
+
 export const Practice = () => {
     const [swiper, setSwiper] = useState(null);
     let mobileOrientation = (innerWidth >= 320 && innerWidth <= 450)
+
+    const [isDialogWindow, setIsDialogWindow] = useState(false)
+
+    const clickButtonHandler = () => {
+        setIsDialogWindow(!isDialogWindow);
+
+        if (!isDialogWindow) {
+            document.body.classList.add('no-scroll');
+        } else {
+            document.body.classList.remove('no-scroll');
+        }
+    };
+
+    const btnClose = () => {
+        setIsDialogWindow(false)
+
+        if (!isDialogWindow) {
+            document.body.classList.add('no-scroll');
+        } else {
+            document.body.classList.remove('no-scroll');
+        }
+    }
+
 
     return (
         <>
             <main>
 
+                {
+                    isDialogWindow === true &&
+                    <ChildWindow buttonClose={() => btnClose()} />
+
+                }
+
                 <section className={styles.bannerContainer}>
-                    <Navbar />
+                    <Navbar buttonOnclick={() => clickButtonHandler()}/>
 
                     <div className={styles.bannerBox}>
                         <div className={styles.bannerBoxText}>

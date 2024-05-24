@@ -30,7 +30,7 @@ export const advantages = [
         color: 'black'
     },
     {
-        img: 'home/advantages/1.svg',
+        img: 'home/advantages/qualification.png',
         title: 'Квалификация',
         text: `Подтверждённая квалификация – в настоящее время статус адвоката в состоянии получить не 
         все юристы – для этого необходимо иметь высшее юридическое образование, стаж по юридической 
@@ -41,7 +41,7 @@ export const advantages = [
         color: 'white'
     },
     {
-        img: 'home/advantages/servicesProvided.svg',
+        img: 'home/advantages/servicesProvided.png',
         title: 'Широкий спектр оказываемых услуг',
         text: `Адвокаты оказывают юридическую помощь широкого спектра по уголовным, 
         гражданским, административным и арбитражным делам физическим и юридическим лицам.`,
@@ -49,7 +49,7 @@ export const advantages = [
         color: 'black'
     },
     {
-        img: 'home/advantages/2.svg',
+        img: 'home/advantages/opportunities.png',
         title: 'Возможности',
         text: `Установленное Федеральным законом право адвоката собирать сведения, 
         необходимые для оказания юридической помощи, в том числе запрашивать 
