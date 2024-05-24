@@ -47,7 +47,7 @@ export const Service = () => {
                     <div className={styles.widthBannerBox}>
                         <div className={styles.bannerBox}>
                             <div className={styles.bannerContainerText}>
-                                <Breadcrumb />
+                                
                                 <header>
                                     <h2>Оказываемые услуги</h2>
                                 </header>

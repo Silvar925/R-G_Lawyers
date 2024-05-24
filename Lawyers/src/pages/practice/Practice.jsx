@@ -59,7 +59,7 @@ export const Practice = () => {
                     <div className={styles.bannerBox}>
                         <div className={styles.bannerBoxText}>
                             <div className={styles.bannerBoxTextLeft}>
-                                <Breadcrumb />
+                                
                                 <h1>Практика</h1>
                             </div>
                             <img src="practiceBanner.png" alt="practiceBanner" />

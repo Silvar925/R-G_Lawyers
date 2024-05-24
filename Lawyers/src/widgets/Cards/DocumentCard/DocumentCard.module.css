@@ -58,10 +58,37 @@
     line-height: 150%;
 }
 
+.docBody {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.docBody a {
+    width: 300px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-transform: uppercase;
+    background-color: rgb(159, 143, 96);
+}
+
 @media (min-width: 320px) and (max-width: 450px) {
     .documentCard {
         gap: 10px;
         width: auto;
+    }
+
+    .documentCard header{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .documentCard header hr {
+        display: none;
     }
 
     .documentCard header h2 {
@@ -83,5 +110,10 @@
     .body p {
         font-size: 14px;
     }
-    
+
+    .docBody{
+        flex-direction: column;
+        gap: 20px;
+    }
+
 }

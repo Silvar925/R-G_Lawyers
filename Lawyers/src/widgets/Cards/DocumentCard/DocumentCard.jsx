@@ -6,18 +6,13 @@ export const DocumentCard = ({ title }) => {
             <header>
                 <img src="googleDocs.svg" alt="goodleDocs" />
                 <hr />
-                <h2>
-                    {title}
-                </h2>
+                <div className={styles.docBody}>
+                    <h2>
+                        {title}
+                    </h2>
+                    <a href="/Istoriya sudebnoj sistemy VS KCHR_2024.docx">Скачать</a>
+                </div>
             </header>
-
-            <div className={styles.body}>
-                <span className={styles.bodyBox}>
-                    <p>Скачать</p>
-                    <a href="#">.doc</a>
-                </span>
-                <p>Дата опубликования на сайте: </p>
-            </div>
 
         </article>
     )

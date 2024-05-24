@@ -52,7 +52,7 @@ export const CostServices = () => {
                             }
 
                             <div className={styles.bannerBoxText}>
-                                <Breadcrumb />
+                                
                                 <h1>Гонорар</h1>
                             </div>
 

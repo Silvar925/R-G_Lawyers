@@ -110,8 +110,10 @@ footer {
         margin-top: 0px;
         gap: 20px;
         flex-direction: column;
+        padding: 0 10px;
+        height: auto;
     }
-    
+
     footer {
         margin-top: 0px;
     }
@@ -121,6 +123,15 @@ footer {
     }
 
     .bannerContainer img {
+        width: 100%;
+    }
+
+    .adress {
+        margin-top: 30px;
+        font-size: 16px;
+    }
+
+    .bannerBox {
         width: 100%;
     }
 }

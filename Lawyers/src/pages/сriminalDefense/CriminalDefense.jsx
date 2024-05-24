@@ -45,7 +45,7 @@ export const CriminalDefense = () => {
 
                     <div className={styles.widthBannerBox}>
                         <div className={styles.bannerBox}>
-                            <Breadcrumb />
+                            
 
                             <div className={styles.bannerBoxText}>
                                 <h2>Защита по уголовным делам</h2>
