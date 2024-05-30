@@ -88,12 +88,9 @@
 }
 
 .сivilСasesContainer ul {
-    /* width: 1324px; */
-    display: grid;
-    column-gap: 24px;
-    row-gap: 24px;
-    grid-template-columns: repeat(2, auto);
-    grid-template-rows: repeat(3, auto);
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
 }
 
 
@@ -117,6 +114,7 @@
 
 .administrativeProceedingSecondUl {
     display: flex;
+    flex-direction: column;
     gap: 24px;
 }
 

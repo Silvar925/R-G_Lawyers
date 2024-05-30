@@ -51,7 +51,6 @@ export const Navbar = ({ color, className, buttonOnclick }) => {
             }
 
 
-            <button className={styles.search}><img src={color === 'black' ? search : searchWhite} alt="search" /></button>
             <button className={`${styles.signUp} ${color === 'black' ? styles.signUpWhite : styles.signUpBlack}`} onClick={buttonOnclick}>ЗАПИСАТЬСЯ НА КОНСУЛЬТАЦИЮ</button>
 
             <button className={`${styles.menu}`}

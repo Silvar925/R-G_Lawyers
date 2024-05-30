@@ -107,7 +107,7 @@ export const Practice = () => {
                                 className={styles.swiperBox}
                                 spaceBetween={30}
                                 slidesPerView={mobileOrientation ? 1 : 3}
-                                onSwiper={setSwiper} // Устанавливаем экземпляр Swiper в состояние
+                                onSwiper={setSwiper} 
                                 navigation={{ prevEl: '.btnSliderLeft', nextEl: '.btnSliderRight' }}
                             >
                                 {thanks.map((item, index) => (

@@ -110,7 +110,7 @@ export const Home = () => {
                             />
                         </li>
                         <li>
-                            <LawyerCard img={["home/aboutUS/woman.png", "woman"]} title={["Абдокова Бэла Хамсудовна", "Адвокат"]}
+                            <LawyerCard img={["home/aboutUS/woman.png", "woman"]} title={["Абдокова Бэлла Хамсудовна", "Адвокат"]}
                                 text={["Номер в реестре адвокатов КЧР 09/1", "Адвокат с 1997 г. ", "Общий юридический стаж более 27 лет."]}
                             />
                         </li>

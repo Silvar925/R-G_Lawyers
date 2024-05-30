@@ -113,12 +113,6 @@ export const Service = () => {
                         </header>
 
                         <div className={styles.administrativeProceedingsBox}>
-
-                            <ul className={styles.administrativeProceedingFirstUl}>
-                                <CriminalDefenseCard title="01." text='Представление интересов по делам об административных правонарушениях в том числе защита прав автомобилистов, (лишение водительского удостоверения и т.п.), обжалование решений контролирующих органов и тп' />
-                                <CriminalDefenseCard title="02." text="Обжалование решений государственных органов и должностных лиц в порядке КАС РФ." />
-                            </ul>
-
                             <ul className={styles.administrativeProceedingSecondUl}>
                                 <CriminalDefenseCard style={{ flexDirection: 'column', alignItems: 'center', textAlign: 'center' }} title="Административное судопроизводство (КАС РФ)" text=" Обжалование судебного акта по административному делу об оспаривании решения, действия (бездействия) органа, организации, лица, наделенных государственными или иными публичными полномочиями." />
                                 <CriminalDefenseCard style={{ flexDirection: 'column', alignItems: 'center', textAlign: 'center', height: 'auto' }} title="Административные правонарушения (КоАП РФ)" text="Оказания юридической помощи лицу, в отношении которого ведется производство по делу об административном правонарушении, в производстве по делу об административном правонарушении в качестве защитника, оказания юридической помощи потерпевшему – в качестве представителя." />

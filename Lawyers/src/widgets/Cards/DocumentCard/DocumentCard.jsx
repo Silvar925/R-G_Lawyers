@@ -1,6 +1,6 @@
 import styles from "./DocumentCard.module.css"
 
-export const DocumentCard = ({ title }) => {
+export const DocumentCard = ({ title, doc }) => {
     return (
         <article className={styles.documentCard}>
             <header>
@@ -10,7 +10,7 @@ export const DocumentCard = ({ title }) => {
                     <h2>
                         {title}
                     </h2>
-                    <a href="/Istoriya sudebnoj sistemy VS KCHR_2024.docx">Скачать</a>
+                    <a href={doc}>Скачать</a>
                 </div>
             </header>
 

@@ -53,7 +53,8 @@ export const Contacts = () => {
                         <li>
                             <p>+7 918 711-77-17</p>
                             <p>advokat.ram@yandex.ru</p>
-                            <p>Абдокова Бэла Хамсудовна</p>
+                            <p>АБДОКОВА БЭЛЛА ХАМСУДОВНА</p>
+                            
                         </li>
 
                         <hr />
@@ -66,7 +67,7 @@ export const Contacts = () => {
                         <li>
                             <div className={styles.adress}>
                                 <img src="coolicon.svg" alt="gps" />
-                                г. Черкесск, ул. Ворошилова 4
+                                Ул. Ворошилова, 2, Черкесск, Карачаево-Черкесская Республика, 369000
                             </div>
                         </li>
                     </ul>

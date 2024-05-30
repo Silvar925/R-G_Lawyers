@@ -5,6 +5,10 @@
     flex-direction: column;
 }
 
+.documentCard a {
+    cursor: pointer;
+}
+
 .documentCard header {
     display: flex;
     align-items: center;
