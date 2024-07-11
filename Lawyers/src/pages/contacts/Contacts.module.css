@@ -1,137 +1,112 @@
 .container {
     display: flex;
     flex-direction: column;
-    position: relative;
-}
-
-.header {
-    /* position: absolute; */
     background-color: black;
+    color: white;
 }
 
-.bannerContainer {
+.content {
     display: flex;
-    gap: 200px;
-    height: 100vh;
-    background-color: black;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
 }
 
-.bannerContainer img {
-    width: 936px;
-    height: 1336;
+.content h3 {
+    font-family: 'Montserrat';
+    font-weight: 500;
 }
 
-.bannerBox {
+.contentInfo {
     display: flex;
+    gap: 44px;
     flex-direction: column;
 }
 
-.bannerBox h1 {
-    margin-top: 29px;
-    margin-bottom: 44px;
-    color: rgb(255, 255, 255);
+.contentInfo header h2 {
     font-family: 'Merriweather';
     font-size: 48px;
     font-weight: 400;
 }
 
-.bannerBox ul {
+.contentInfo ul {
     display: flex;
-    gap: 16px;
-    flex-direction: column;
-    color: white;
-}
-
-.bannerBox ul hr {
-    width: 70px;
-    background-color: rgb(159, 143, 96);
-    color: rgb(159, 143, 96);
-    height: 5px;
-    border: none;
-    outline: none;
-}
-
-.bannerBox ul li {
-    display: flex;
-    gap: 16px;
+    gap: 44px;
     flex-direction: column;
 }
 
-.bannerBox ul li img {
-    height: 22px;
-    width: 30px;
+.contentInfo ul li {
+    display: flex;
+    gap: 16px;
 }
 
-.bannerBox ul li p {
-    color: rgb(255, 255, 255);
+.contentInfo ul li h3 {
+    width: 200px;
     font-family: 'Montserrat';
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 600;
     line-height: 24px;
 }
 
-.bannerBox {
-    display: flex;
+.contentInfo ul li hr {
+    border: 2px solid #9F8F60;
 }
 
-.adress {
-    margin-top: 96px;
+.topBox {
     display: flex;
-    gap: 10px;
+    height: 100%;
+    gap: 220px;
     align-items: center;
+}
 
-    color: rgb(255, 255, 255);
+.topBox img {
+    width: 688px;
+}
+
+.contact {
+    display: flex;
+    gap: 16px;
+    flex-direction: column;
+}
+
+.contact p {
     font-family: 'Merriweather';
-    font-size: 24px;
+    font-size: 16px;
     font-weight: 400;
-}
-
-.adress img {
-    height: 40px;
-}
-
-footer {
-    margin-top: 0px;
-}
-
-.footer {
-    backdrop-filter: blur(8px);
-    background: rgba(0, 0, 0, 0.4);
-    position: absolute;
-    margin-top: 0px;
-    width: 100%;
-    bottom: 0px;
+    line-height: 21px;
 }
 
 @media (min-width: 320px) and (max-width: 435px) {
-    .bannerContainer {
-        margin-top: 0px;
-        gap: 20px;
+    .topBox {
+        padding: 0px 10px;
+    }
+
+    .topBox img {
+        display: none;
+    }
+
+    .content {
+        gap: 30px;
+        align-items: stretch;
+    }
+
+    .contentInfo {
+        width: 100%;
+    }
+
+    .contentInfo ul li {
+        width: 100%;
         flex-direction: column;
-        padding: 0 10px;
-        height: auto;
     }
 
-    footer {
-        margin-top: 0px;
-    }
-
-    .footer {
+    .contentInfo ul li h3 {
         width: 100%;
     }
 
-    .bannerContainer img {
+    .contentInfo header h2 {
         width: 100%;
     }
 
-    .adress {
-        margin-top: 30px;
-        font-size: 16px;
-    }
-
-    .bannerBox {
+    .contact p {
         width: 100%;
     }
 }

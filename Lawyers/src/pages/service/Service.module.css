@@ -127,6 +127,45 @@
     width: 1300px;
 }
 
+.textContainer {
+    display: flex;
+    gap: 80px;
+    flex-direction: column;
+}
+
+.textBox {
+    width: 1300px;
+    display: flex;
+    gap: 44px;
+    flex-direction: column;
+    align-items: left;
+}
+
+.textBox header h2 {
+    color: rgb(0, 0, 0);
+    font-family: 'Merriweather';
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 45px;
+    letter-spacing: -0.7px;
+}
+
+.textBox ul {
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+}
+
+.textBox ul li {
+    color: rgb(0, 0, 0);
+    font-family: 'Montserrat';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
 
 
 @media (min-width: 320px) and (max-width: 450px) {
@@ -172,5 +211,25 @@
 
     .sectionTitle h2 {
         font-size: 16px;
+    }
+
+    .textContainer {
+        gap: 10px;
+    }
+
+    .textBox {
+        gap: 10px;
+        width: auto;
+        padding: 10px;
+    }
+
+    .textBox header h2 {
+        width: auto;
+        font-size: 15px;
+        line-height: normal;
+    }
+
+    .textBox ul li {
+        font-size: 14px;
     }
 }

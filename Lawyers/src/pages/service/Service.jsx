@@ -47,7 +47,7 @@ export const Service = () => {
                     <div className={styles.widthBannerBox}>
                         <div className={styles.bannerBox}>
                             <div className={styles.bannerContainerText}>
-                                
+
                                 <header>
                                     <h2>Оказываемые услуги</h2>
                                 </header>
@@ -70,7 +70,7 @@ export const Service = () => {
 
 
                 <div className={styles.container}>
-                    <section className={styles.criminalDefense}>
+                    {/* <section className={styles.criminalDefense}>
                         <header className={styles.sectionTitle}>
                             <h2>Защита по уголовным делам</h2>
                         </header>
@@ -86,7 +86,7 @@ export const Service = () => {
                                 })
                             }
                         </ul>
-                    </section>
+                    </section> */}
 
                     <section className={styles.сivilСasesContainer}>
                         <header className={styles.sectionTitle}>
@@ -139,6 +139,97 @@ export const Service = () => {
                                 })
                             }
                         </ul>
+                    </section>
+
+
+                    <section className={styles.textContainer}>
+                        <section className={styles.textBox}>
+                            <header>
+                                <h2>Участие в гражданском судопроизводстве:</h2>
+                            </header>
+
+                            <ul>
+                                <li><p>•По делам об имущественных спорах (в том числе жилищные и земельные споры)</p></li>
+                                <li><p>•По делам о наследовании</p></li>
+                                <li><p>•По делам о брачно-семейных спорах</p></li>
+                                <li><p>•По трудовым спорам</p></li>
+                                <li><p>•Взыскание ущерба</p></li>
+                                <li><p>•Установление юридических фактов</p></li>
+                            </ul>
+                        </section>
+
+                        <section className={styles.textBox}>
+                            <header>
+                                <h2>Представление интересов в арбитражных судах:</h2>
+                            </header>
+                            <ul>
+                                <li><p>•Банкротство физических лиц, индивидуальных предпринимателей, юридических лиц.</p></li>
+                                <li><p>•Взыскание ущерба, задолженности по обязательствам и т.д.</p></li>
+                            </ul>
+                        </section>
+
+
+                        <section className={styles.textBox}>
+                            <header>
+                                <h2>Представительство в исполнительном производстве</h2>
+                            </header>
+                        </section>
+
+
+                        <section className={styles.textBox}>
+                            <header>
+                                <h2>Уменьшение кадастровой стоимости объектов недвижимости</h2>
+                            </header>
+                        </section>
+
+                        <section className={styles.textBox}>
+                            <header>
+                                <h2>Юридические консультации</h2>
+                            </header>
+                        </section>
+
+                        <section className={styles.textBox}>
+                            <header>
+                                <h2>Составление исковых заявлений, жалоб, ходатайств и иных документов правового характера</h2>
+                            </header>
+                        </section>
+
+                        <section className={styles.textBox}>
+                            <header>
+                                <h2>Составление проектов договоров, адвокатских запросов</h2>
+                            </header>
+                        </section>
+
+                        <section className={styles.textBox}>
+                            <header>
+                                <h2>Участие в уголовном судопроизводстве</h2>
+                            </header>
+                        </section>
+
+                        <section className={styles.textBox}>
+                            <header>
+                                <h2>Участие в гражданском судопроизводстве в судах общей юрисдикции, арбитражных судах, по делам об административных правонарушениях</h2>
+                            </header>
+                        </section>
+
+                        <section className={styles.textBox}>
+                            <header>
+                                <h2>Представительство во внесудебных органах</h2>
+                            </header>
+                        </section>
+
+                        <section className={styles.textBox}>
+                            <header>
+                                <h2>Оказание юридической помощи юридическим лицам и индивидуальным предпринимателям</h2>
+                            </header>
+                        </section>
+
+                        <section className={styles.textBox}>
+                            <header>
+                                <h2>Медиация</h2>
+                            </header>
+                        </section>
+
                     </section>
 
 
